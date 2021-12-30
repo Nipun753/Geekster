@@ -40,7 +40,7 @@ console.log(g_class.instructor.name);
 console.log(g_class['instructor']['name']);
 console.log(g_class.students[5].name);
 
-for(var i=0;i<=10;i=i+1){
+for(var i=0;i<=g_class.students.length;i=i+1){
 if(g_class.students[i].marks>=85){
 alert(g_class.students[i].name);
 }
