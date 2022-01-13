@@ -1,0 +1,83 @@
+.header {
+  background-color: orangered;
+  color: white;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+.contend {
+  display: flex;
+  height: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.aside1 {
+  background-color: blue;
+  color: white;
+  flex-grow: 1;
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.l {
+  background-color: blueviolet;
+  color: white;
+  flex-grow: 2;
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.aside2 {
+  background-color: darkgoldenrod;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer {
+  background-color: greenyellow;
+  color: white;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .l {
+    order: 1;
+    width: 100%;
+  }
+  .aside1 {
+    order: 2;
+
+    width: 100%;
+  }
+  .aside2 {
+    order: 3;
+  }
+  .footer {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  .l {
+    order: 1;
+    width: 100%;
+  }
+  .aside1 {
+    order: 2;
+  }
+  .aside2 {
+    order: 3;
+  }
+}
