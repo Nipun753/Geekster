@@ -1,0 +1,21 @@
+section {
+  padding-top: 100px;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+p {
+  width: 200px;
+  margin: auto;
+}
+button {
+  height: 50px;
+  width: 100px;
+  border: none;
+  background-color: tomato;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

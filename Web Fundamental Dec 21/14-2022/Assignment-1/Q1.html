@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Calculater </title>
+        <meta charset="UTF-8" /> <!-- SJIS (Shift JIS) -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="Q1.css"/>
+    </head>
+    <body>
+        <h1>Calculater</h1>
+        <section class="UI" >
+            <p id="output"></p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th><button  onClick="deleteLastDigit();">🔙</button></th>
+                        <th><button onClick="clearAll();">C</button></th>
+                        <th><button onClick="clearAll();">AC</button></th>
+                        <th><button onClick='setOperator("-");' class="fuc">-</button></th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><button onClick='concatNumber("9");'>9</button></th>
+                        <th><button onClick='concatNumber("8");'>8</button></th>
+                        <th><button onClick='concatNumber("7");'>7</button></th>
+                        <th><button onClick='setOperator("*");' class="fuc">*</button></th>
+                        
+                    </tr>
+                    <tr>
+                        <th><button onClick='concatNumber("6");'>6</button></th>
+                        <th><button onClick='concatNumber("5");'>5</button></th>
+                        <th><button onClick='concatNumber("4");'>4</button></th>
+                        <th><button onClick='setOperator("+");' class="fuc">+</button></th>
+                        
+                    </tr>
+                    <tr>
+                        <th><button onClick='concatNumber("3");'>3</button></th>
+                        <th><button onClick='concatNumber("2");'>2</button></th>
+                        <th><button onClick='concatNumber("1");'>1</button></th>
+                        <td><button onClick='setOperator("x²");' class="fuc">x²</button></td>
+                      
+                    </tr>
+                  
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><button onClick='setOperator("/");' class="fuc">/</button></td>
+                        <td><button onClick='concatNumber("0");'>0</button></td>
+                        <td><button onClick='setOperator("%");' class="fuc">%</button></td>
+                        <td><button onclick="equals()" class="equalto">=</button></td>
+                        
+                    </tr>
+                </tfoot>
+            </table>
+              
+        </section>
+        <script src="Q1.js"></script>
+    </body>
+</html>
