@@ -17,5 +17,5 @@
       var x = [1, 2, 3, 4];
        var geek1 = manipulateArray(x,mulBy4);
        var geek2 = manipulateArray(x,add9);
-      console.log(geek1);
-      console.log(geek2)
+      document.write(geek1);
+      document.write(geek2);
