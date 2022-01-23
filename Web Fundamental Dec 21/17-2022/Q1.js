@@ -18,4 +18,5 @@
        var geek1 = manipulateArray(x,mulBy4);
        var geek2 = manipulateArray(x,add9);
       document.write(geek1);
+ document.write("<br/>");
       document.write(geek2);
