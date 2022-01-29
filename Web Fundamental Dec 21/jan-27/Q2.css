@@ -22,3 +22,9 @@ body {
 .todo-item {
   margin: 10px 0;
 }
+button {
+  border-radius: 4px;
+  color: wheat;
+  border: none;
+  background-color: tomato;
+}
