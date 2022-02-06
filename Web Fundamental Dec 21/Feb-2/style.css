@@ -1,0 +1,38 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+#countdown {
+  border: 1px solid black;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+#countdown1 {
+  justify-content: center;
+
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+#stop {
+  background-color: violet;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+#reset {
+  background-color: violet;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
