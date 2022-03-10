@@ -2,20 +2,17 @@
 function checkWord(board, word, index, row, col)
 {
 	
-	// If index exceeds board range
+	
 	if (row < 0 || col < 0 ||
 		row >= board.length ||
 		col >= board[0].length)
 		return false;
 	
-	// If the current cell does not
-	// contain the required character
+	
 	if (board[row][col] !== word[index])
 		return false;
 		
-	// If the cell contains the required
-	// character and is the last character
-	// of the word required to be matched
+	
 	else if (index === word.length - 1)
 	
 		// Return true as word is found
@@ -23,11 +20,9 @@ function checkWord(board, word, index, row, col)
 	
 	var temp = board[row][col];
 	
-	// Mark cell visited
 	board[row][col] = "*";
 	
-	// Check adjacent cells
-	// for the next character
+	
 	if (checkWord(board, word,
 				index + 1, row + 1, col) ||
 		checkWord(board, word,
@@ -41,7 +36,7 @@ function checkWord(board, word, index, row, col)
 		return true;
 	}
 	
-	// Restore cell value
+	
 	board[row][col] = temp;
 	return false;
 }
